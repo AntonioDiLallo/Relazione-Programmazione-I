@@ -1,0 +1,81 @@
+header, section, nav{
+  display: block;
+}
+
+body{
+  color: #000001;
+  background-color: #90E0EF;
+  line-height: 1.4em;
+  margin: 0px;
+}
+
+img{
+  display: inline;
+  padding: 20px;
+}
+
+.barra{
+  width: auto;
+  margin: auto;
+  border: 2px solid #0350B5;
+  background-color: #0350B5;
+}
+
+header{
+  height: auto;
+}
+
+
+.sezione{
+    margin: 10px auto;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.testo{
+  font-size: 200%;
+  position: absolute;
+  width: 600px;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  margin: 0 -300px;
+}
+
+nav{
+  clear: both;
+  color: #ffffff;
+  background-color: #0077B6;
+  height: 30px;
+}
+
+nav ul{
+  margin: 0px;
+  padding: 5px 0px  5px 30px;
+}
+
+nav li{
+  display: inline;
+  margin-right: 40px;
+}
+
+nav li a {
+  color: #000000;
+}
+
+nav li a:hover, nav li a.current{
+  color: #ffffff;
+}
+
+
+
+a{
+  color: #000000;
+  text-decoration: none;
+}
+
+h1{
+  font-weight: normal;
+  display: inline;
+}

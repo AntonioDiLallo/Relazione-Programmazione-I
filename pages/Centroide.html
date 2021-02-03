@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Centroide</title>
+    <link rel="stylesheet" type="text/css" href="../Style/page.css">
+  </head>
+  <body>
+    <div class="barra">
+      <header>
+        <img src="..\images\Logo_Uniparthenope.png" alt="Logo_Uniparthenope" width="70px" height="70px" align="middle">
+        <h1>Relazione Di Lallo Antonio - Programmazione I e Laboratorio di Programmazione I</h1>
+        <nav>
+          <ul>
+            <li><a href="..\index.html">Home</a></li>
+            <li><a href="..\Pr_Di_Lallo_Antonio.pdf">File Pdf</a></li>
+            <li><a href="" class="current">Centroide</a></li>
+            <li><a href="Segreteria.html">Segreteria studenti</a></li>
+          </ul>
+        </nav>
+      </header>
+      </div>
+      <div class="esercizio">
+        <h2>Traccia</h2>
+        <p>
+          Si vuole sviluppare un algoritmo per il calcolo del centroide. L’algoritmo considera una scacchiera di 30x30 caselle e dispone a caso (usando la function rand) 50 oggetti<br>
+          (la posizione è una coppia di numeri interi). L’algoritmo deve visualizzare la scacchiera, mostrando un ‘ ’ per le caselle non occupate e mostrando una ‘X’ per le caselle<br>
+          occupate dagli oggetti. L’algoritmo determina il centroide dell’insieme dei 50 oggetti: il centroide è un punto della scacchiera che ha per ascissa l’intero più vicino alla media<br>
+          delle ascisse di tutti gli oggetti e per ordinata l’intero più vicino alla media delle ordinate di tutti gli oggetti. L’algoritmo deve visualizzare di nuovo la scacchiera, indicando, <br>
+          oltre alle caselle vuote e a quelle occupate, anche la posizione del centroide (indicandola con la lettera ‘C’). Infine, l’algoritmo calcola e visualizza la distanza di ognuno degli oggetti <br>
+          dal centroide, e determina e visualizza sia la minima distanza (indicando anche la posizione dell’oggetto a minima distanza) sia la massima distanza (indicando anche la posizione dell’oggetto a massima distanza).
+        </p>
+        <h2>Codice sorgente</h2>
+        <table>
+          <tr>
+            <td class="bianco"><img src="..\images\Centroide_Sorgente\Centroide_main.png" alt="Centroide_main"></td>
+            <td>File main del progetto</td>
+          </tr>
+          <tr>
+            <td class="bianco"><img src="..\images\Centroide_Sorgente\Centroide_header.png" alt="Centroide_header"></td>
+            <td>File header del progetto</td>
+          </tr>
+          <tr>
+            <td class="bianco"><img src="..\images\Centroide_Sorgente\Centroide_inizializza.png" alt="Centroide_inizializza"> </td>
+            <td>Funzione di inizializzazione della matrice, <br>imposta tutti i valori a " "</td>
+          </tr>
+          <tr>
+            <td class="bianco"><img src="..\images\Centroide_Sorgente\Centroide_orizzontale.png" alt="Centroide_orizzontale"> </td>
+            <td>Funzione di formattazione, <br>disegna una linea orizzontale con il carattere "-"</td>
+          </tr>
+          <tr>
+            <td class="bianco"><img src="..\images\Centroide_Sorgente\Centroide_stampa.png" alt="Centroide_stampa"> </td>
+            <td>Funzione di stampa, <br>stampa la scacchiera ed il suo contenuto</td>
+          </tr>
+          <tr>
+            <td class="bianco"><img src="..\images\Centroide_Sorgente\Centroide_inserimento.png" alt="Centroide_inserimento"> </td>
+            <td>Funzione di inserimento, <br>Inserisce i 50 oggetti in posizioni casuali della scacchiera</td>
+          </tr>
+          <tr>
+            <td class="bianco"><img src="..\images\Centroide_Sorgente\Centroide_calcolo.png" alt="Centroide_calcolo_centroide"> </td>
+            <td>Funzione di calcolo del centroide, <br>Calcola il centroide dei punti precedentemente immessi</td>
+          </tr>
+          <tr>
+            <td class="bianco"><img src="..\images\Centroide_Sorgente\Centroide_maxmin.png" alt="Centroide_calcolo_maxmin"> </td>
+            <td>Funzione di calcolo, <br>Calcola il massimo ed il minimo tra le distanze che hanno i punti dal centroide</td>
+          </tr>
+          <tr>
+            <td class="bianco"><img src="..\images\Centroide_Sorgente\Centroide_calcolod.png" alt="Centroide_calcolo_distanzePunti"> </td>
+            <td>Funzione di calcolo, <br>Calcola le distanze dei punti dal centroide</td>
+          </tr>
+          <tr>
+            <td class="bianco"><img src="..\images\Centroide_Sorgente\Centroide_stampad.png" alt="Centroide_stampaDistanze"> </td>
+            <td>Funzione di stampa, <br>Stampa la distanza di ogni punto dal centroide indicando distanza massima e distanza minima</td>
+          </tr>
+        </table><hr>
+        <h2>Sezione Test</h2>
+        <table class="test">
+          <tr>
+            <td colspan="4"><h2>Primo test</h2></td>
+          </tr>
+          <tr>
+            <td class="nero"><img src="..\images\Centroide_Test\PrintScreen_1_1.png" alt="Print screen 1_1"></td>
+            <td class="nero"><img src="..\images\Centroide_Test\PrintScreen_1_2.png" alt="Print screen 1_2"></td>
+            <td class="nero"><img src="..\images\Centroide_Test\PrintScreen_1_3.png" alt="Print screen 1_3"></td>
+            <td class="nero"><img src="..\images\Centroide_Test\PrintScreen_1_4.png" alt="Print screen 1_4"></td>
+          </tr>
+          <tr>
+            <td>Stampa della scacchiera vuota</td>
+            <td>Inserimento dei 50 punti casuali nella scacchiera e quindi stampa</td>
+            <td>Calcolo del centroide della scacchiera ed inserimento di quest'ultimo nella scacchiera</td>
+            <td>Stampa delle distanze di ogni punto dal centroide indicando distanza minima e massima</td>
+          </tr>
+        </table><br>
+        <table class="test">
+          <tr>
+            <td colspan="4"><h2>Secondo test</h2></td>
+          </tr>
+          <tr>
+            <td class="nero"><img src="..\images\Centroide_Test\PrintScreen_2_1.png" alt="Print screen 2_1"></td>
+            <td class="nero"><img src="..\images\Centroide_Test\PrintScreen_2_2.png" alt="Print screen 2_2"></td>
+            <td class="nero"><img src="..\images\Centroide_Test\PrintScreen_2_3.png" alt="Print screen 2_3"></td>
+            <td class="nero"><img src="..\images\Centroide_Test\PrintScreen_2_4.png" alt="Print screen 2_4"></td>
+          </tr>
+          <tr>
+            <td>Stampa della scacchiera vuota</td>
+            <td>Inserimento dei 50 punti casuali nella scacchiera e quindi stampa</td>
+            <td>Calcolo del centroide della scacchiera ed inserimento di quest'ultimo nella scacchiera</td>
+            <td>Stampa delle distanze di ogni punto dal centroide indicando distanza minima e massima</td>
+          </tr>
+        </table><br>
+        <table class="test">
+          <tr>
+            <td colspan="4"><h2>Terzo test</h2></td>
+          </tr>
+          <tr>
+            <td class="nero"><img src="..\images\Centroide_Test\PrintScreen_3_1.png" alt="Print screen 3_1"></td>
+            <td class="nero"><img src="..\images\Centroide_Test\PrintScreen_3_2.png" alt="Print screen 3_2"></td>
+            <td class="nero"><img src="..\images\Centroide_Test\PrintScreen_3_3.png" alt="Print screen 3_3"></td>
+            <td class="nero"><img src="..\images\Centroide_Test\PrintScreen_3_4.png" alt="Print screen 3_4"></td>
+          </tr>
+          <tr>
+            <td>Stampa della scacchiera vuota</td>
+            <td>Inserimento dei 50 punti casuali nella scacchiera e quindi stampa</td>
+            <td>Calcolo del centroide della scacchiera ed inserimento di quest'ultimo nella scacchiera</td>
+            <td>Stampa delle distanze di ogni punto dal centroide indicando distanza minima e massima</td>
+          </tr>
+        </table>
+      </div>
+  </body>
+</html>

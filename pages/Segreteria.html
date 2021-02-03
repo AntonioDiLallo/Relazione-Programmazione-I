@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Segreteria studenti</title>
+    <link rel="stylesheet" type="text/css" href="../Style/page.css">
+  </head>
+  <body>
+    <div class="barra">
+      <header>
+        <img src="..\images\Logo_Uniparthenope.png" alt="Logo_Uniparthenope" width="70px" height="70px" align="middle">
+        <h1>Relazione Di Lallo Antonio - Programmazione I e Laboratorio di Programmazione I</h1>
+        <nav>
+          <ul>
+            <li><a href="..\index.html">Home</a></li>
+            <li><a href="..\Pr_Di_Lallo_Antonio.pdf">File Pdf</a></li>
+            <li><a href="Centroide.html">Centroide</a></li>
+            <li><a href=""  class="current">Segreteria studenti</a></li>
+          </ul>
+        </nav>
+      </header>
+      </div>
+      <div class="esercizio">
+        <h2>Traccia</h2>
+        <p>
+          Scrivere un programma per la gestione della segreteria studenti. Ogni studente è <br>
+          identificato dal nome, dal cognome e dalla matricola. Il corso ha complessivamente 10 <br>
+          studenti. <br>
+          Permettere di:<br>
+          • Inserire un nuovo studente <br>
+          • Eliminare uno studente <br>
+          • Ordinare gli studenti in ordine alfabetico usando un algoritmo di ordinamento per selezione di massimo. <br>
+        </p>
+        <h2>Codice sorgente</h2>
+        <table>
+          <tr>
+            <td class="bianco"><img src="..\images\Segreteria_Sorgente\Segreteria_main.png" alt="Segreteria_main"></td>
+            <td>File main del progetto</td>
+          </tr>
+          <tr>
+            <td class="bianco"><img src="..\images\Segreteria_Sorgente\Segreteria_header.png" alt="Segreteria_header"></td>
+            <td>File header del progetto</td>
+          </tr>
+          <tr>
+            <td class="bianco"><img src="..\images\Segreteria_Sorgente\Segreteria_visualizza.png" alt="Segreteria_visualizza"> </td>
+            <td>Funzione di stampa, <br>stampa tutti gli studenti iscritti a schermo</td>
+          </tr>
+          <tr>
+            <td class="bianco"><img src="..\images\Segreteria_Sorgente\Segreteria_tostringa.png" alt="Segreteria_tostringa"> </td>
+            <td>Funzione di calcolo ed assegnazione, <br>converte un valore numerico nel corrispettivo stringa</td>
+          </tr>
+          <tr>
+            <td class="bianco"><img src="..\images\Segreteria_Sorgente\Segreteria_iscrizione.png" alt="Segreteria_iscrizione"> </td>
+            <td>Funzione di inserimento, <br>iscrive, quindi inserisce uno studente alla lista <br> ordinandoli in ordine alfabetico</td>
+          </tr>
+          <tr>
+            <td class="bianco"><img src="..\images\Segreteria_Sorgente\Segreteria_ricerca.png" alt="Segreteria_ricerca"> </td>
+            <td>Funzione di ricerca, <br>data una stringa in input, la cerca nella lista</td>
+          </tr>
+          <tr>
+            <td class="bianco"><img src="..\images\Segreteria_Sorgente\Segreteria_elimina.png" alt="Segreteria_elimina"> </td>
+            <td>Funzione di eliminazione, <br>simula l'eliminazione di uno studente dalla lista</td>
+          </tr>
+          <tr>
+            <td class="bianco"><img src="..\images\Segreteria_Sorgente\Segreteria_scambia.png" alt="Segreteria_scambia"> </td>
+            <td>Funzione di scambio, <br>scambia il valore della prima variabile con <br> il valore della seconda variabile, e viceversa</td>
+          </tr>
+          <tr>
+            <td class="bianco"><img src="..\images\Segreteria_Sorgente\Segreteria_massimo.png" alt="Segreteria_massimo"> </td>
+            <td>Funzione di ricerca, <br>ricerca il massimo tra le stringhe dell'array</td>
+          </tr>
+          <tr>
+            <td class="bianco"><img src="..\images\Segreteria_Sorgente\Segreteria_ordselmax.png" alt="Segreteria_ordselmax"> </td>
+            <td>Funzione di ordinamento, <br>Ordina in ordine alfabetico usando l'algoritmo per selezione di massimo</td>
+          </tr>
+        </table><hr>
+        <h2>Sezione Test</h2>
+        <table class="test">
+          <tr>
+            <td colspan="4"><h2>Primo test</h2></td>
+          </tr>
+          <tr>
+            <td class="nero"><img src="..\images\Segreteria_Test\PrintScreen_1_1.png" alt="Print screen 1_1"></td>
+            <td>Appena si avvia il programma ci appare l'interfaccia utente</td>
+          </tr>
+          <tr>
+            <td class="nero"><img src="..\images\Segreteria_Test\PrintScreen_1_2.png" alt="Print screen 1_2"></td>
+            <td>La sezione di iscrizione ci permette di inserire il nome ed il cognome dello studente, <br> assegnando una matricola auto-incrementata a quest'ultimo, <br> il contatore non utilizza matricole gia usate in precedenza se quest'ultime vengono eliminate  </td>
+          </tr>
+          <tr>
+            <td class="nero"><img src="..\images\Segreteria_Test\PrintScreen_1_3.png" alt="Print screen 1_3"></td>
+            <td>La sezione di eliminazione ci permette di inserire la matricola dello studente da eliminare</td>
+          </tr>
+          <tr>
+            <td class="nero"><img src="..\images\Segreteria_Test\PrintScreen_1_4.png" alt="Print screen 1_4"></td>
+            <td>La lista degli studenti viene automaticamente ordinata in ordine alfabetico</td>
+          </tr>
+        </table><br>
+        <table class="test">
+          <tr>
+            <td colspan="4"><h2>Secondo test</h2></td>
+          </tr>
+          <tr>
+            <td class="nero"><img src="..\images\Segreteria_Test\PrintScreen_1_1.png" alt="Print screen 1_1"></td>
+            <td>Appena si avvia il programma ci appare l'interfaccia utente</td>
+          </tr>
+          <tr>
+            <td class="nero"><img src="..\images\Segreteria_Test\PrintScreen_2_1.png" alt="Print screen 2_1"></td>
+            <td>La sezione di iscrizione ci permette di inserire il nome ed il cognome dello studente, <br> assegnando una matricola auto-incrementata a quest'ultimo, <br> il contatore non utilizza matricole gia usate in precedenza se quest'ultime vengono eliminate  </td>
+          </tr>
+          <tr>
+            <td class="nero"><img src="..\images\Segreteria_Test\PrintScreen_2_2.png" alt="Print screen 2_2"></td>
+            <td>Se la matricola inserita non è presente nella lista il programma ritorna un messaggio di errore</td>
+          </tr>
+          <tr>
+            <td class="nero"><img src="..\images\Segreteria_Test\PrintScreen_2_3.png" alt="Print screen 2_3"></td>
+            <td>La lista degli studenti viene automaticamente ordinata in ordine alfabetico</td>
+          </tr>
+        </table><br>
+        <table class="test">
+          <tr>
+            <td colspan="4"><h2>Terzo test</h2></td>
+          </tr>
+          <tr>
+            <td class="nero"><img src="..\images\Segreteria_Test\PrintScreen_1_1.png" alt="Print screen 1_1"></td>
+            <td>Appena si avvia il programma ci appare l'interfaccia utente</td>
+          </tr>
+          <tr>
+            <td class="nero"><img src="..\images\Segreteria_Test\PrintScreen_3_1.png" alt="Print screen 3_1"></td>
+            <td>Se la lista è piena (max 10 studenti) il programma ce lo segnala</td>
+          </tr>
+          <tr>
+            <td class="nero"><img src="..\images\Segreteria_Test\PrintScreen_3_2.png" alt="Print screen 3_2"></td>
+            <td>Se la lista è vuota il programma ce lo segnala</td>
+          </tr>
+          <tr>
+            <td class="nero"><img src="..\images\Segreteria_Test\PrintScreen_3_3.png" alt="Print screen 3_3"></td>
+            <td>La lista degli studenti viene automaticamente ordinata in ordine alfabetico</td>
+          </tr>
+        </table>
+      </div>
+  </body>
+</html>
